@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Irfan - Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            background: #948E99;
+            background: -webkit-linear-gradient(to bottom, #2E1437, #948E99);
+            background: linear-gradient(to bottom, #2E1437, #948E99);
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .navbar.nav-scroll {
+            background-color: #000;
+        }
+
+        .navbar.nav-transparent {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .timeline {
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #1eff00;
+            transform: translateX(-50%);
+        }
+
+        .experience {
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience ul {
+            color: black;
+            /* Set the color for the unordered list */
+        }
+
+        .experience li {
+            color: black;
+            /* Set the color for list items */
+        }
+
+        .experience h3 {
+            color: #060606;
+            font-size: 1.5rem;
+        }
+
+        .experience p {
+            color: #333;
+        }
+
+        .date {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .company-website a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+        <a class="navbar-brand" href="index.html">Md Irfan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="experiences.html">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Company Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="qualification.html">Qualification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <!-- Add other navigation items as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Experiences Section -->
+    <section id="experiences">
+        <div class="container">
+            <h2 class="text-center mt-5 mb-4">Professional Experiences</h2>
+
+            <!-- Timeline for Experiences -->
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="experience">
+                    <h3>Web Developer - Ginilytics IT Solutions Pvt Ltd</h3>
+                    <p>Description: As a dedicated Web Developer at Ginilytics IT Solutions, I played a key role in
+                        creating dynamic and visually appealing web solutions. Collaborating with a talented team, I
+                        contributed to the development of innovative projects that enhanced user experiences and met
+                        client objectives.</p>
+                    <p>My responsibilities included:</p>
+                    <ul>
+                        <li>Designing and implementing responsive, user-friendly web interfaces.</li>
+                        <li>Collaborating with cross-functional teams to gather and define project requirements.</li>
+                        <li>Writing clean, maintainable, and efficient code to meet project deadlines.</li>
+                        <li>Conducting thorough testing to ensure optimal functionality across various browsers and
+                            devices.</li>
+                        <li>Staying updated with industry trends and emerging technologies to incorporate best practices
+                            into projects.</li>
+                    </ul>
+                    <p class="date">Jan 2023 - Present</p>
+                    <p class="company-website">
+                        <a href="https://ginilytics.com/" target="_blank">Visit the company website</a>
+                    </p>
+                </div>
+
+                <!-- Add more experiences as needed -->
+            </div>
+
+            <h2 class="text-center mt-5 mb-4">Internships</h2>
+
+            <!-- Timeline for Internships -->
+            <div class="timeline">
+                <!-- Internship 1 -->
+                <div class="experience">
+                    <h3>Web Development Intern - CSDT IT SOLUTION PATNA</h3>
+                    <p>Description: As a Web Development Intern at CSDT IT Solution, I had the opportunity to immerse
+                        myself in the world of web development. During this internship, I actively contributed to
+                        various aspects of the web development process, gaining valuable hands-on experience in creating
+                        and optimizing web solutions.</p>
+                    <p>My responsibilities included:</p>
+                    <ul>
+                        <li>Assisting in the development of responsive and user-friendly web interfaces.</li>
+                        <li>Collaborating with the development team to implement new features and functionalities.</li>
+                        <li>Participating in code reviews and debugging sessions to ensure code quality.</li>
+                        <li>Learning and applying best practices in web development.</li>
+                    </ul>
+                    <p class="company-website"><a href="https://www.csdtitsolution.com/" target="_blank">Visit the company
+                            website</a></p>
+                </div>
+
+
+                <!-- Add more internships as needed -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Scrolling animation script -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+                } else {
+                    $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+                }
+            });
+
+            var url = window.location.href;
+
+            $('ul.navbar-nav li a').each(function () {
+                if (url.includes(this.href)) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

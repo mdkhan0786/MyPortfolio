@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Irfan - Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #948E99;
+            background: -webkit-linear-gradient(to bottom, #2E1437, #948E99);
+            background: linear-gradient(to bottom, #2E1437, #948E99);
+            color: white;
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.5s ease;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar.nav-scroll {
+            background-color: #000;
+        }
+
+        .navbar.nav-transparent {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .contact-details {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-details h2 {
+            color: #060606;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .contact-details a {
+            color: #101010;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding-top: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+        <a class="navbar-brand" href="index.html">Md Irfan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experiences.html">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Company Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="qualification.html">Qualification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <!-- Add other navigation items as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center mt-5 mb-4">Contact Me</h2>
+
+            <div class="contact-details">
+                <p>
+                    Feel free to reach out to me through the following contact details:
+                </p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:mdirfanhasmin@gmail.com">mdirfanhasmin@gmail.com</a>
+                </p>
+                <p>
+                    <strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100044624537690&mibextid=ZbWKwL" target="_blank">Md Khan</a>
+                </p>
+                <p>
+                    <strong>Instagram:</strong> <a href="https://www.instagram.com/hanguma_reels_emotion?igsh=MTZqZXRnOWR3YngyMA==" target="_blank">Md Khan</a>
+                </p>
+                <p>
+                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/md-irfan-2027aa22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Md Irfan</a>
+                </p>
+                <p>
+                    <strong>YouTube:</strong> <a href="https://youtube.com/@Mix.Accademy?si=gvZgNvSETIWrlCrH" target="_blank">Mix.Accademy</a>
+                </p>
+                <!-- Add more contact details as needed -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        $(document).ready(function () {
+            $("a.nav-link").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- Scrolling animation script -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+                } else {
+                    $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+                }
+            });
+
+            var url = window.location.href;
+
+            $('ul.navbar-nav li a').each(function () {
+                if (url.includes(this.href)) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

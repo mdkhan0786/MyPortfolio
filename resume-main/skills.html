@@ -1,0 +1,387 @@
+<!-- skills.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Irfan - Skills</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll;
+      background: #948E99;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #2E1437, #948E99);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #2E1437, #948E99);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: white;
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.5s ease;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar.nav-scroll {
+      background-color: #000;
+    }
+
+    .navbar.nav-transparent {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .container {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    /* Add flip card animation styles */
+    .skill-card {
+      position: relative;
+      cursor: pointer;
+      perspective: 1000px;
+      margin-bottom: 20px;
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 200px;
+      /* Set a fixed height for the flip card */
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .skill-card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      backface-visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card-front h4,
+    .card-back p {
+      color: #333;
+      /* Darker font color */
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+    }
+
+    .row [class*="col-"] {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-transparent">
+    <a class="navbar-brand" href="#">Md Irfan</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experiences.html">Experiences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Company Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="qualification.html">Qualification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+<!--           test -->
+        </li>
+        <!-- Add other navigation items as needed -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Skills Section -->
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-center mt-5 mb-4">My Skills</h2>
+      <p class="text-center mb-5">Here are some of the key skills I possess in web development and programming.</p>
+      <div class="row">
+        <!-- PHP Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>PHP</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Proficient in server-side scripting with PHP, creating dynamic web pages and
+                  applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- Wordpress Skill Card -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h4>Wordpress</h4>
+                </div>
+                <div class="card-back">
+                  <p>Description: proficiency in WordPress theme and plugin development.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <!-- Laravel Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Laravel</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Learning Laravel for modern and efficient PHP web development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Python Skill Card -->
+          <div class="col-md-4">
+            <div class="skill-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <h4>Python</h4>
+                </div>
+                <div class="card-back">
+                  <p>Description: proficiency in Python Desktop Application.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Djano Skill Card -->
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h4>Djano</h4>
+                  </div>
+                  <div class="card-back">
+                    <p>Description: Learning Djano for modern and efficient web  Application development.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <!-- MySQL Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>MySQL</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Proficient in relational database management using MySQL for data storage and retrieval.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HTML Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>HTML5</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Proficient in creating structured, semantic markup with HTML5 for modern web
+                  development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>CSS3</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Skilled in styling web pages using CSS3, including responsive design techniques.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>JavaScript</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Proficient in client-side scripting with JavaScript, including DOM manipulation and
+                  AJAX.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jQuery Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>jQuery</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Skilled in using jQuery for simplifying client-side scripting and handling events.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Familiar with the Bootstrap framework for building responsive and mobile-first websites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Git Skill Card -->
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Git</h4>
+              </div>
+              <div class="card-back">
+                <p>Description: Proficient in version control using Git for tracking changes and collaborating on
+                  projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more skill cards as needed -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Smooth scrolling script -->
+  <script>
+    $(document).ready(function () {
+      $("a.nav-link").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- Scrolling animation script -->
+  <script>
+    $(document).ready(function () {
+      // Highlight the active navigation item
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').addClass('nav-scroll').removeClass('nav-transparent');
+        } else {
+          $('.navbar').removeClass('nav-scroll').addClass('nav-transparent');
+        }
+      });
+
+      // Add this script to highlight the active navigation item
+      // Get the current page URL
+      var url = window.location.href;
+
+      // Iterate over each nav link
+      $('ul.navbar-nav li a').each(function () {
+        // Check if the URL contains the href of the current nav link
+        if (url.includes(this.href)) {
+          // Add the 'active' class to highlight the active nav link
+          $(this).addClass('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
